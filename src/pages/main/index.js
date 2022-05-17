@@ -158,7 +158,7 @@ const Main = () => {
                             The following information is ground recon by
                         </p>
                         <p>
-                            █████████████████████████████████████████
+                            ██████████████████████████{!isMobile && '████████████████'}
                         </p>
                     </div>
                     <div className='clearance'>
@@ -252,7 +252,7 @@ const Main = () => {
                     </div>
                     <div className='mission-with-icons'>
                         <div className='mission'>
-                            Mission: Capture subjects and relocate to testing containments located at ████████████████████████████████████████
+                            Mission: Capture subjects and relocate to testing containments located at ███████████████████████████{!isMobile && '█████████████'}
                         </div>
                         <div className='icon-box container-wrapper'>
                             <div>
