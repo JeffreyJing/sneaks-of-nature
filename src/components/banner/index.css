@@ -1,0 +1,129 @@
+.banner-container {
+    position: relative;
+    width: 100%;
+    /* min-height: 620px; */
+}
+
+.banner-video {
+    overflow: hidden;
+}
+
+.banner-video video {
+    /** DO NOT CHANGE THESE NUMBERS **/
+    width: 140%;
+    margin-top: -28%;
+    margin-left: -30%;
+    margin-bottom: -14%;
+}
+
+.banner-content {
+    position: absolute;
+    top: 0px;
+    width: 33%;
+    margin: 5%;
+    color: white;
+}
+
+@media screen and (max-width: 1600px) {
+    .banner-video video {
+        width: 180%;
+        margin-top: -36%;
+        margin-left: -60%;
+        margin-bottom: -15%;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    .banner-video video {
+        width: 200%;
+        margin-top: -40%;
+        margin-left: -77%;
+        margin-bottom: -17%;
+    }
+    .banner-content {
+        width: 45%;
+    }
+}
+
+
+
+.banner-content h2 {
+    font-size: 40px;
+}
+
+.banner-content p {
+    font-family: 'Interstate Light';
+    font-size: 18px;
+    margin-bottom: 50px;
+    text-align: left;
+    width: 75%;
+}
+
+.banner-content button {
+    margin-bottom: 30px;
+}
+
+/* .banner-content svg { */
+    /* margin-top: 30px; */
+    /* color: white !important;
+    fill: white !important;
+    height: 50px;
+    width: 50px;
+} */
+
+.banner-opensea {
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+}
+
+.banner-content a {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .banner-opensea {
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    /** DO NOT CHANGE THESE NUMBERS **/
+    .banner-video video {
+        width: 320%;
+        margin-top: -70%;
+        margin-left: -110%;
+        margin-bottom: -32%;
+    }
+
+    .banner-content-wrapper {
+        margin: 10%;
+    }
+
+    .banner-content p {
+        width: 100%;
+    }
+
+    .banner-content {
+        position: initial;
+        color: black;
+        width: 100%;
+        margin: 0px;
+        text-align: center;
+    }
+
+    /* .banner-content svg { */
+        /* margin-top: 30px; */
+        /* color: black !important;
+        fill: black !important;
+        height: 50px;
+        width: 50px;
+    } */
+}

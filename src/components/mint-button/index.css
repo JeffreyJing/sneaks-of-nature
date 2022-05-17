@@ -1,0 +1,85 @@
+/* .mint-overall-container {
+    margin: auto;
+    text-align: center;
+    font-size: 25px;
+} */
+
+/* .mint-title {
+    font-size: 40px;
+    margin-bottom: 10px;
+} */
+
+.mint-counter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.mint-amount-number {
+    display: inline-block;
+}
+
+.mint-accent {
+    color: var(--accent-color);
+}
+
+.mint-button-container {
+    padding: 12px;
+}
+
+/* .mint-button-container {
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 30px;
+    border-radius: 20px;
+    padding: 40px;
+} */
+
+.mint-disabled {
+    cursor: not-allowed;
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+.mint-disabled:hover {
+    box-shadow: none;
+}
+
+.mint-error {
+    color: var(--accent-color);
+}
+
+.mint-error, .mint-success {
+    font-weight: bold;
+}
+
+.mint-counter-button:last-child {
+    margin-left: 10px;
+}
+
+/* .mint-disconnect {
+    margin: 25px;
+} */
+
+.mint-button-connected p {
+    margin: 0px;
+    margin-bottom: 3px;
+}
+
+.mint-button-connected {
+    margin-bottom: 6px;
+}
+
+.mint-button-connected a {
+    text-decoration: underline;
+    font-size: 20px;
+    font-family: 'Interstate Light';
+}
+
+@media screen and (max-width: 1000px) {
+    .mint-button-connected p {
+        text-align: center;
+    }
+}

@@ -1,0 +1,10 @@
+.terms-of-use-container {
+    color: white;
+    background-color: black;
+    padding: 10%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.terms-title {
+    text-align: center;
+}

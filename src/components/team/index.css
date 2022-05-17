@@ -1,0 +1,56 @@
+.team-container {
+    margin-left: var(--side-margin);
+    margin-right: var(--side-margin);
+}
+
+.team-container h2 {
+    text-align: center;
+    font-size: 72px;
+}
+
+.team-members {
+    display: flex;
+    column-gap: 20px;
+}
+
+.team-member {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-member img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.team-socials {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+    .team-member img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+}
+
+.box {
+    float: left;
+    width: 200px;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 20px;
+    border: 5px solid black;
+    border-radius: 20px;
+    width: 66%
+}
+
+h1 {
+    text-align: center;
+}

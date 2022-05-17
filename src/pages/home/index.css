@@ -1,0 +1,39 @@
+.home {
+	margin: auto;
+	text-align: center;
+}
+
+.sneaks-main-logo {
+	margin-top: 3vh;
+	display: flex;
+	justify-content: center;
+}
+
+.sneaks-logo-item {
+	margin: auto;
+}
+
+.enter-button {
+	margin-top: -5vh;
+	margin-bottom: 5vh;
+}
+
+.enter-button button {
+	padding-left: 5vw;
+	padding-right: 5vw;
+}
+
+.confidential p {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+@media screen and (max-width: 1000px) {
+	.sneaks-main-logo {
+		margin-top: 15vh;
+	}
+
+	.enter-button button {
+		width: 40%;
+	}
+}
