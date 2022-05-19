@@ -32,6 +32,10 @@
     align-items: flex-end;
 }
 
+.clearance div svg {
+    width: fit-content;
+}
+
 .clearance-text {
     padding-top: 5px;
 }
