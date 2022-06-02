@@ -304,6 +304,11 @@ h2 {
 }
 
 @media screen and (max-width: 1000px) {
+
+    .card-modal {
+        width: 80%;
+    }
+
     .main {
         font-size: 10px;
     }
@@ -318,6 +323,14 @@ h2 {
 
     .clearance {
         height: 40px;
+    }
+
+    .card-clearance {
+        height: unset;
+    }
+
+    .card-clearance-text {
+        margin-top: 0px !important;
     }
 
     .subject-items {
