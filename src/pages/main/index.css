@@ -123,6 +123,10 @@ h2 {
     color: #ddd2cd;
 }
 
+.card-contents {
+    width: 100%;
+}
+
 .card-clearance-text {
     margin-top: -30px !important;
     font-size: 14px;
@@ -159,7 +163,7 @@ h2 {
     display: flex;
     width: 100%;
     background-color: rgb(195,182,174);
-    border: 1px solid white;
+    border: 2px solid white;
     border-radius: 10px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -173,6 +177,26 @@ h2 {
     align-items: center;
     color: black;
     font-size: 13px;
+}
+
+.card-traits {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3px;
+    font-size: 14px;
+}
+
+.card-trait {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-ability {
+    border: 2px solid #ddd2cd;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 20px;
+    font-size: 14px;
 }
 
 .card-form div {

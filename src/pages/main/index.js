@@ -340,7 +340,7 @@ const Main = () => {
                                     </div>
 
                                     <div className='card-ability'>
-                                        {selectedCardMeta.name} has the ability to ████████████████  
+                                        {selectedCardMeta.name} has the ability to ██████████████  
                                     </div>
                                 </div>
                             </div>
