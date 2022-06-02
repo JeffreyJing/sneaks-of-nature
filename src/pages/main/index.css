@@ -101,6 +101,31 @@ h2 {
 .card-modal {
     width: 25%;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    row-gap: 10px;
+    color: #ddd2cd;
+}
+
+.modal-close {
+    cursor: pointer;
+}
+
+.card {
+    width: 100%;
+    border: 1px solid #ddd2cd;
+    background-color: black;
+    border-radius: 10px;
+    /* padding: 30px; */
+    display: flex;
+    color: #ddd2cd;
+}
+
+.card-contents {
+    /* margin: auto; */
+    padding: 30px;
 }
 
 .subject-container {

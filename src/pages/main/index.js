@@ -267,15 +267,82 @@ const Main = () => {
 
 	const isMobile = width < 1000;
 
+    const selectedCardMeta = selectedCard !== undefined ? SUBJECTS[selectedCard] : undefined;
+
     return (
         <>
             {selectedCard !== undefined && (
                 <>
                     <div className='card-modal-container'>
                         <div className='card-modal'>
-                            <div onClick={() => setSelectedCard(undefined)}>Close X</div>
+                            <div className='modal-close' onClick={() => setSelectedCard(undefined)}>Close X</div>
                             <div className='card'>
-                                Test
+                                <div className='card-contents'>
+                                    <div className='card-contents-header'>
+                                        <div className='card-nickname-container'>
+                                            <div className='card-nickname-label'>Nickname</div>
+                                            <div className='card-nickname-name'>{selectedCardMeta.name}</div>
+                                        </div>
+                                        <div className='card-clearance'>
+                                            <div>
+                                                <SneaksSmaller />
+                                            </div>
+                                            <div className='card-clearance-text'>
+                                                Clearance
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className='card-forms'>
+                                        <div className='card-form'>
+                                            <img src={selectedCardMeta.sneakForm} />
+                                            <div>
+                                                Sneak Form
+                                            </div>
+                                        </div>
+                                        <div className='card-form'>
+                                            <img src={selectedCardMeta.cone} />
+                                            <div>
+                                                Cone Form
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className='card-traits'>
+                                        <div className='card-trait'>
+                                            <div>ORIGIN:</div>
+                                            <div>{selectedCardMeta.metadata.origin}</div>
+                                        </div>
+                                        <div className='card-trait'>
+                                            <div>ORGANISM:</div>
+                                            <div>{selectedCardMeta.metadata.organism}</div>
+                                        </div>
+                                        <div className='card-trait'>
+                                            <div>STRENGTH:</div>
+                                            <div>{selectedCardMeta.metadata.strength}</div>
+                                        </div>
+                                        <div className='card-trait'>
+                                            <div>WEAKNESS:</div>
+                                            <div>{selectedCardMeta.metadata.weakness}</div>
+                                        </div>
+                                        <div className='card-trait'>
+                                            <div>POWER:</div>
+                                            <div>{selectedCardMeta.metadata.power}</div>
+                                        </div>
+                                        <div className='card-trait'>
+                                            <div>CHARGE:</div>
+                                            <div>{selectedCardMeta.metadata.charge}</div>
+                                        </div>
+                                        <div className='card-trait'>
+                                            <div>DIET:</div>
+                                            <div>{selectedCardMeta.metadata.diet}</div>
+                                        </div>
+                                    </div>
+
+                                    <div className='card-ability'>
+                                        {selectedCardMeta.name} has the ability to ████████████████  
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -339,7 +406,9 @@ const Main = () => {
                         <div className='subject-items'>
                             {SUBJECTS.map((subject, i) => (
                                 <div className={`subject-item ${subject.cone && 'subject-hascone'}`} key={`${subject.name}${i}`} onClick={() => {
-                                    setSelectedCard(i);
+                                    if (subject.cone !== undefined) {
+                                        setSelectedCard(i);
+                                    }
                                 }}>
                                     <div className={`subject-character ${!subject.isHatched && 'subject-character-egg'}`}>
                                         <img src={subject.image} alt={subject.name} />
