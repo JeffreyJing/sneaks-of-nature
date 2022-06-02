@@ -26,52 +26,175 @@ import robBox from '../../assets/_raw/boxes/12-rob-box-normal-eye.gif';
 import doverAngry from '../../assets/_raw/boxes/13-dover-box-angry-eye.gif';
 import connor from '../../assets/_raw/boxes/14-connor-box-focused-eye.gif';
 import belly from '../../assets/_raw/boxes/15-belly-box-angry-eye.gif';
+
+import aceCone from '../../assets/_raw/cones/ace.png';
+import bellyCone from '../../assets/_raw/cones/belly.png';
+import bobCone from '../../assets/_raw/cones/bob.png';
+import bonesCone from '../../assets/_raw/cones/bones.png';
+import brocCone from '../../assets/_raw/cones/broc.png';
+import caneCone from '../../assets/_raw/cones/cane.png';
+import chuckCone from '../../assets/_raw/cones/chuck.png';
+import cocoCone from '../../assets/_raw/cones/coco.png';
+import connorCone from '../../assets/_raw/cones/connor.png';
+import cosmoCone from '../../assets/_raw/cones/cosmo.png';
+import dionCone from '../../assets/_raw/cones/dion.png';
+import doverCone from '../../assets/_raw/cones/dover.png';
+import dustyCone from '../../assets/_raw/cones/dusty.png';
+import gigiCone from '../../assets/_raw/cones/gigi.png';
+import karlCone from '../../assets/_raw/cones/karl.png';
+import kunoCone from '../../assets/_raw/cones/kuno.png';
+import marshallCone from '../../assets/_raw/cones/marshall.png';
+import neoCone from '../../assets/_raw/cones/neo.png';
+import novaCone from '../../assets/_raw/cones/nova.png';
+import peteyCone from '../../assets/_raw/cones/petey.png';
+import robCone from '../../assets/_raw/cones/rob.png';
+import rollieCone from '../../assets/_raw/cones/rollie.png';
+import sunnyCone from '../../assets/_raw/cones/sunny.png';
+
+import bobSneakForms from '../../assets/_raw/sneakforms/bob.png';
+import caneSneakForms from '../../assets/_raw/sneakforms/cane.png';
+import chuckSneakForms from '../../assets/_raw/sneakforms/chuck.png';
+import gigiSneakForms from '../../assets/_raw/sneakforms/gigi.png';
+import peteySneakForms from '../../assets/_raw/sneakforms/petey.png';
+import robSneakForms from '../../assets/_raw/sneakforms/rob.png';
+import rollieSneakForms from '../../assets/_raw/sneakforms/rollie.png';
+import sunnySneakForms from '../../assets/_raw/sneakforms/sunny.png';
+
+
 import { DISCORD_URL, INSTAGRAM_URL, OPENSEA_URL, TWITTER_URL } from '../../constants';
 
 const SUBJECTS = [
     {
         name: 'Rollie',
         image: rollie,
-        isHatched: true
+        isHatched: true,
+        cone: rollieCone,
+        sneakForm: rollieSneakForms,
+        metadata: {
+            origin: 'Unknown',
+            organism: 'Amorphic',
+            strength: 'Empathy',
+            weakness: 'Heat',
+            power: 'Telepathy',
+            charge: 'Level 7',
+            diet: 'Cherries'
+        },
     },
     {
         name: 'Chuck',
         image: chuck,
-        isHatched: true
+        isHatched: true,
+        cone: chuckCone,
+        sneakForm: chuckSneakForms,
+        metadata: {
+            origin: 'Unknown',
+            organism: 'Amorphic',
+            strength: 'Persistence',
+            weakness: 'Heat',
+            power: 'Telepathy',
+            charge: 'Level 2',
+            diet: 'Fudge'
+        },
     },
     {
         name: 'Rob',
         image: rob,
-        isHatched: true
+        isHatched: true,
+        cone: robCone,
+        sneakForm: robSneakForms,
+        metadata: {
+            origin: 'Unknown',
+            organism: 'Amorphic',
+            strength: 'Innovative',
+            weakness: 'Heat',
+            power: 'Telepathy',
+            charge: 'Level 6',
+            diet: 'N/A'
+        },
     },
     {
         name: 'Cane',
         image: cane,
-        isHatched: true
+        isHatched: true,
+        cone: caneCone,
+        sneakForm: caneSneakForms,
+        metadata: {
+            origin: 'Unknown',
+            organism: 'Amorphic',
+            strength: 'Patience',
+            weakness: 'Heat',
+            power: 'Telepathy',
+            charge: 'Level 3',
+            diet: 'Blueberries'
+        },
     },
     {
         name: 'Sunny',
         image: sunny,
-        isHatched: true
+        isHatched: true,
+        cone: sunnyCone,
+        sneakForm: sunnySneakForms,
+        metadata: {
+            origin: 'Unknown',
+            organism: 'Amorphic',
+            strength: 'Optimism',
+            weakness: 'Heat',
+            power: 'Telepathy',
+            charge: 'Level 3',
+            diet: 'Lemon'
+        },
     },
     {
-        name: 'Barry',
+        name: 'Bob',
         image: barry,
-        isHatched: true
+        isHatched: true,
+        cone: bobCone,
+        sneakForm: bobSneakForms,
+        metadata: {
+            origin: 'Unknown',
+            organism: 'Amorphic',
+            strength: 'Mindset',
+            weakness: 'Heat',
+            power: 'Telepathy',
+            charge: 'Level 2',
+            diet: 'Chocolate Chips'
+        },
     },
     {
         name: 'Gigi',
         image: gigi,
-        isHatched: true
+        isHatched: true,
+        cone: gigiCone,
+        sneakForm: gigiSneakForms,
+        metadata: {
+            origin: 'Unknown',
+            organism: 'Amorphic',
+            strength: 'Consistency',
+            weakness: 'Heat',
+            power: 'Telepathy',
+            charge: 'Level 6',
+            diet: 'Green Apples'
+        },
     },
     {
         name: 'Petey',
         image: petey,
-        isHatched: true
+        isHatched: true,
+        cone: peteyCone,
+        sneakForm: peteySneakForms,
+        metadata: {
+            origin: 'Unknown',
+            organism: 'Amorphic',
+            strength: 'Confidence',
+            weakness: 'Heat',
+            power: 'Telepathy',
+            charge: 'Level 5',
+            diet: 'Red Velvet'
+        },
     },
     {
         name: '?',
-        image: coco
+        image: coco,
     },
     {
         name: '?',
