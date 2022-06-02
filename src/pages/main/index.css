@@ -83,6 +83,26 @@ h2 {
     margin-bottom: 15px;
 }
 
+.subject-hascone {
+    cursor: pointer;
+}
+
+.card-modal-container {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+
+    display: flex;
+}
+
+.card-modal {
+    width: 25%;
+    margin: auto;
+}
+
 .subject-container {
     background-color: rgb(195,182,174);
 }

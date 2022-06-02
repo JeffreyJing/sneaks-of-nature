@@ -257,6 +257,7 @@ const SUBJECTS = [
 const Main = () => {
 	const [width, setWidth] = useState(window.innerWidth);
     const [isExpandedSeeMore, setIsExpandedSeeMore] = useState(false);
+    const [selectedCard, setSelectedCard] = useState(undefined);
 
 	useEffect(() => {
         window.addEventListener("resize", () => {
@@ -268,6 +269,18 @@ const Main = () => {
 
     return (
         <>
+            {selectedCard !== undefined && (
+                <>
+                    <div className='card-modal-container'>
+                        <div className='card-modal'>
+                            <div onClick={() => setSelectedCard(undefined)}>Close X</div>
+                            <div className='card'>
+                                Test
+                            </div>
+                        </div>
+                    </div>
+                </>
+            )}
             <div className='main'>
                 <div className='header'>
                     <div className='file-details'>
@@ -325,7 +338,9 @@ const Main = () => {
                     <div className='subject-container container-wrapper'>
                         <div className='subject-items'>
                             {SUBJECTS.map((subject, i) => (
-                                <div className='subject-item' key={`${subject.name}${i}`}>
+                                <div className={`subject-item ${subject.cone && 'subject-hascone'}`} key={`${subject.name}${i}`} onClick={() => {
+                                    setSelectedCard(i);
+                                }}>
                                     <div className={`subject-character ${!subject.isHatched && 'subject-character-egg'}`}>
                                         <img src={subject.image} alt={subject.name} />
                                     </div>
