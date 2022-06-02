@@ -99,7 +99,7 @@ h2 {
 }
 
 .card-modal {
-    width: 25%;
+    width: 33%;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -121,6 +121,59 @@ h2 {
     /* padding: 30px; */
     display: flex;
     color: #ddd2cd;
+}
+
+.card-clearance-text {
+    margin-top: -30px !important;
+    font-size: 14px;
+}
+
+.card-nickname-label {
+    font-size: 14px;
+}
+
+.card-nickname-name {
+    font-size: 40px;
+}
+
+.card-contents-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.card-clearance svg path {
+    fill: #ddd2cd;
+    color: #ddd2cd;
+}
+
+.card-form img {
+    width: 80%;
+}
+
+.card-forms {
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    background-color: rgb(195,182,174);
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.card-form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    color: black;
+    font-size: 13px;
+}
+
+.card-form div {
+    margin-bottom: 10px;
 }
 
 .card-contents {

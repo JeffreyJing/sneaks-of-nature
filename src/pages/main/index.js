@@ -283,11 +283,11 @@ const Main = () => {
                                             <div className='card-nickname-label'>Nickname</div>
                                             <div className='card-nickname-name'>{selectedCardMeta.name}</div>
                                         </div>
-                                        <div className='card-clearance'>
+                                        <div className='clearance card-clearance'>
                                             <div>
                                                 <SneaksSmaller />
                                             </div>
-                                            <div className='card-clearance-text'>
+                                            <div className='clearance-text card-clearance-text'>
                                                 Clearance
                                             </div>
                                         </div>
