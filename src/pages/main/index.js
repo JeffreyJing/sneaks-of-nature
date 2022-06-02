@@ -340,6 +340,7 @@ const Main = () => {
                                     </div>
 
                                     <div className='card-ability'>
+                                        <div>NOTES:</div>
                                         {selectedCardMeta.name} has the ability to ██████████████  
                                     </div>
                                 </div>

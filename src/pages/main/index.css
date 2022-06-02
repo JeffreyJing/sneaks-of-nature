@@ -199,6 +199,10 @@ h2 {
     font-size: 14px;
 }
 
+.card-ability div {
+    margin-bottom: 5px;
+}
+
 .card-form div {
     margin-bottom: 10px;
 }
