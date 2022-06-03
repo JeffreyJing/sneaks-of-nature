@@ -22,9 +22,9 @@ import lancer from '../../assets/_raw/characters/lancer_beater.gif';
 import marshall from '../../assets/_raw/characters/marshall_heater.gif';
 import neo from '../../assets/_raw/characters/neo_used.gif';
 import nova from '../../assets/_raw/characters/own_nova_beater.gif';
-// import cosmo
-// import kuno
-// import karl
+import cosmo from '../../assets/_raw/characters/cosmo_toddler.gif';
+import kuno from '../../assets/_raw/characters/kuno-used.gif';
+import karl from '../../assets/_raw/characters/karl_used.gif';
 
 import aceCone from '../../assets/_raw/cones/ace.png';
 import bellyCone from '../../assets/_raw/cones/belly.png';
@@ -398,54 +398,54 @@ const SUBJECTS = [
             diet: 'Watermelon'
         }
     },
-    // {
-    //     name: 'Cosmo',
-    //     image: cosmo,
-    //     isHatched: true,
-    //     cone: cosmoCone,
-    //     sneakForm: cosmoSneakForms,
-    //     metadata: {
-    //         origin: 'Unknown',
-    //         organism: 'Amorphic',
-    //         strength: 'Transparency',
-    //         weakness: 'Heat',
-    //         power: 'Telepathy',
-    //         charge: 'Level 5',
-    //         diet: 'Grape'
-    //     }
-    // },
-    // {
-    //     name: 'Kuno',
-    //     image: kuno,
-    //     isHatched: true,
-    //     cone: kunoCone,
-    //     sneakForm: kunoSneakForms,
-    //     metadata: {
-    //         origin: 'Unknown',
-    //         organism: 'Amorphic',
-    //         strength: 'Authenticity',
-    //         weakness: 'Heat',
-    //         power: 'Telepathy',
-    //         charge: 'Level 3',
-    //         diet: 'Syrup'
-    //     }
-    // },
-    // {
-    //     name: 'Karl',
-    //     image: karl,
-    //     isHatched: true,
-    //     cone: karlCone,
-    //     sneakForm: karlSneakForms,
-    //     metadata: {
-    //         origin: 'Unknown',
-    //         organism: 'Amorphic',
-    //         strength: 'Cautious',
-    //         weakness: 'Heat',
-    //         power: 'Telepathy',
-    //         charge: 'Level 2',
-    //         diet: 'Kiwi'
-    //     }
-    // },
+    {
+        name: 'Cosmo',
+        image: cosmo,
+        isHatched: true,
+        cone: cosmoCone,
+        sneakForm: cosmoSneakForms,
+        metadata: {
+            origin: 'Unknown',
+            organism: 'Amorphic',
+            strength: 'Transparency',
+            weakness: 'Heat',
+            power: 'Telepathy',
+            charge: 'Level 5',
+            diet: 'Grape'
+        }
+    },
+    {
+        name: 'Kuno',
+        image: kuno,
+        isHatched: true,
+        cone: kunoCone,
+        sneakForm: kunoSneakForms,
+        metadata: {
+            origin: 'Unknown',
+            organism: 'Amorphic',
+            strength: 'Authenticity',
+            weakness: 'Heat',
+            power: 'Telepathy',
+            charge: 'Level 3',
+            diet: 'Syrup'
+        }
+    },
+    {
+        name: 'Karl',
+        image: karl,
+        isHatched: true,
+        cone: karlCone,
+        sneakForm: karlSneakForms,
+        metadata: {
+            origin: 'Unknown',
+            organism: 'Amorphic',
+            strength: 'Cautious',
+            weakness: 'Heat',
+            power: 'Telepathy',
+            charge: 'Level 2',
+            diet: 'Kiwi'
+        }
+    },
 ];
 
 const Main = () => {
