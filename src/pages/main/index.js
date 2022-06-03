@@ -65,13 +65,18 @@ import sunnyCone from '../../assets/_raw/cones/sunny.png';
 
 import aceSneakForms from '../../assets/_raw/sneakforms/ace.png';
 import bobSneakForms from '../../assets/_raw/sneakforms/bob.png';
+import breeSneakForms from '../../assets/_raw/sneakforms/bree.png';
 import caneSneakForms from '../../assets/_raw/sneakforms/cane.png';
+import cocoSneakForms from '../../assets/_raw/sneakforms/coco.png';
+import novaSneakForms from '../../assets/_raw/sneakforms/nova.png';
 import chuckSneakForms from '../../assets/_raw/sneakforms/chuck.png';
 import gigiSneakForms from '../../assets/_raw/sneakforms/gigi.png';
 import peteySneakForms from '../../assets/_raw/sneakforms/petey.png';
 import robSneakForms from '../../assets/_raw/sneakforms/rob.png';
 import rollieSneakForms from '../../assets/_raw/sneakforms/rollie.png';
 import sunnySneakForms from '../../assets/_raw/sneakforms/sunny.png';
+import connorSneakForms from '../../assets/_raw/sneakforms/connor.png';
+import dionSneakForms from '../../assets/_raw/sneakforms/dion.png';
 
 
 import { DISCORD_URL, INSTAGRAM_URL, OPENSEA_URL, TWITTER_URL } from '../../constants';
@@ -219,6 +224,86 @@ const SUBJECTS = [
             power: 'Telepathy',
             charge: 'Level 3',
             diet: 'Strawberry'
+        }
+    },
+    {
+        name: 'Coco',
+        image: coco,
+        isHatched: true,
+        cone: cocoCone,
+        sneakForm: cocoSneakForms,
+        metadata: {
+            origin: 'Unknown',
+            organism: 'Amorphic',
+            strength: 'Trust',
+            weakness: 'Heat',
+            power: 'Telepathy',
+            charge: 'Level 4',
+            diet: 'Marshmallows'
+        }
+    },
+    {
+        name: 'Bree',
+        image: broc,
+        isHatched: true,
+        cone: brocCone,
+        sneakForm: breeSneakForms,
+        metadata: {
+            origin: 'Unknown',
+            organism: 'Amorphic',
+            strength: 'Imagination',
+            weakness: 'Heat',
+            power: 'Telepathy',
+            charge: 'Level 2',
+            diet: 'Mangos'
+        }
+    },
+    {
+        name: 'Nova',
+        image: nova,
+        isHatched: true,
+        cone: novaCone,
+        sneakForm: novaSneakForms,
+        metadata: {
+            origin: 'Unknown',
+            organism: 'Amorphic',
+            strength: 'Wisdom',
+            weakness: 'Heat',
+            power: 'Telepathy',
+            charge: 'Level 4',
+            diet: 'Caramel'
+        }
+    },
+    {
+        name: 'Connor',
+        image: connor,
+        isHatched: true,
+        cone: connorCone,
+        sneakForm: connorSneakForms,
+        metadata: {
+            origin: 'Unknown',
+            organism: 'Amorphic',
+            strength: 'Balance',
+            weakness: 'Heat',
+            power: 'Telepathy',
+            charge: 'Level 3',
+            diet: 'Cookies and Cream'
+        }
+    },
+    {
+        name: 'Dion',
+        image: dion,
+        isHatched: true,
+        cone: dionCone,
+        sneakForm: dionSneakForms,
+        metadata: {
+            origin: 'Unknown',
+            organism: 'Amorphic',
+            strength: 'Integrity',
+            weakness: 'Heat',
+            power: 'Telepathy',
+            charge: 'Level 5',
+            diet: 'Frosty'
         }
     }
     // {
