@@ -22,22 +22,9 @@ import lancer from '../../assets/_raw/characters/lancer_beater.gif';
 import marshall from '../../assets/_raw/characters/marshall_heater.gif';
 import neo from '../../assets/_raw/characters/neo_used.gif';
 import nova from '../../assets/_raw/characters/own_nova_beater.gif';
-
-// import coco from '../../assets/_raw/boxes/1-coco-box-angry-eye.gif';
-// // import bones from '../../assets/_raw/boxes/2-bones-box-normal_0426.gif';
-// import cocoNormal from '../../assets/_raw/boxes/3-coco-box-normal-eye.gif';
-// import broc from '../../assets/_raw/boxes/4-broc-box-focused-eye.gif';
-// import dusty from '../../assets/_raw/boxes/5-dusty-box-focus-eye.gif';
-// import nova from '../../assets/_raw/boxes/6-nova-box-focused-pupil.gif';
-// import dion from '../../assets/_raw/boxes/7-dion-box-focused-pupil.gif';
-// import neo from '../../assets/_raw/boxes/8-neo-box-focused-eye.gif';
-// import dover from '../../assets/_raw/boxes/9-dover-box-normal-pupil.gif';
-// import caneBox from '../../assets/_raw/boxes/10-cane-box-normal-eye.gif';
-// import rollieBox from '../../assets/_raw/boxes/11-rollie-box-focused-pupil.gif';
-// import robBox from '../../assets/_raw/boxes/12-rob-box-normal-eye.gif';
-// import doverAngry from '../../assets/_raw/boxes/13-dover-box-angry-eye.gif';
-// import connor from '../../assets/_raw/boxes/14-connor-box-focused-eye.gif';
-// import belly from '../../assets/_raw/boxes/15-belly-box-angry-eye.gif';
+// import cosmo
+// import kuno
+// import karl
 
 import aceCone from '../../assets/_raw/cones/ace.png';
 import bellyCone from '../../assets/_raw/cones/belly.png';
@@ -77,6 +64,15 @@ import rollieSneakForms from '../../assets/_raw/sneakforms/rollie.png';
 import sunnySneakForms from '../../assets/_raw/sneakforms/sunny.png';
 import connorSneakForms from '../../assets/_raw/sneakforms/connor.png';
 import dionSneakForms from '../../assets/_raw/sneakforms/dion.png';
+import bellySneakForms from '../../assets/_raw/sneakforms/belly.png';
+import sashaSneakForms from '../../assets/_raw/sneakforms/sasha.png';
+import doverSneakForms from '../../assets/_raw/sneakforms/dover.png';
+import cosmoSneakForms from '../../assets/_raw/sneakforms/cosmo.png';
+import dustySneakForms from '../../assets/_raw/sneakforms/dusty.png';
+import bonesSneakForms from '../../assets/_raw/sneakforms/bones.png';
+import kunoSneakForms from '../../assets/_raw/sneakforms/kuno.png';
+import neoSneakForms from '../../assets/_raw/sneakforms/neo.png';
+import karlSneakForms from '../../assets/_raw/sneakforms/karl.png';
 
 
 import { DISCORD_URL, INSTAGRAM_URL, OPENSEA_URL, TWITTER_URL } from '../../constants';
@@ -305,7 +301,103 @@ const SUBJECTS = [
             charge: 'Level 5',
             diet: 'Frosty'
         }
-    }
+    },
+    {
+        name: 'Belly',
+        image: belly,
+        isHatched: true,
+        cone: bellyCone,
+        sneakForm: bellySneakForms,
+        metadata: {
+            origin: 'Unknown',
+            organism: 'Amorphic',
+            strength: 'Adaptability',
+            weakness: 'Heat',
+            power: 'Telepathy',
+            charge: 'Level 3',
+            diet: 'Brownies'
+        }
+    },
+    {
+        name: 'Sasha',
+        image: marshall,
+        isHatched: true,
+        cone: marshallCone,
+        sneakForm: sashaSneakForms,
+        metadata: {
+            origin: 'Unknown',
+            organism: 'Amorphic',
+            strength: 'Loyalty',
+            weakness: 'Heat',
+            power: 'Telepathy',
+            charge: 'Level 1',
+            diet: 'Peanut Butter'
+        }
+    },
+    {
+        name: 'Bones',
+        image: bones,
+        isHatched: true,
+        cone: bonesCone,
+        sneakForm: bonesSneakForms,
+        metadata: {
+            origin: 'Unknown',
+            organism: 'Amorphic',
+            strength: 'Gratitude',
+            weakness: 'Heat',
+            power: 'Telepathy',
+            charge: 'Level 2',
+            diet: 'Brown Sugar Cinnamon'
+        }
+    },
+    {
+        name: 'Dusty',
+        image: dusty,
+        isHatched: true,
+        cone: dustyCone,
+        sneakForm: dustySneakForms,
+        metadata: {
+            origin: 'Unknown',
+            organism: 'Amorphic',
+            strength: 'Brave',
+            weakness: 'Heat',
+            power: 'Telepathy',
+            charge: 'Level 2',
+            diet: 'Oranges'
+        }
+    },
+    {
+        name: 'Dover',
+        image: dover,
+        isHatched: true,
+        cone: doverCone,
+        sneakForm: doverSneakForms,
+        metadata: {
+            origin: 'Unknown',
+            organism: 'Amorphic',
+            strength: 'Compliant',
+            weakness: 'Heat',
+            power: 'Telepathy',
+            charge: 'Level 1',
+            diet: 'Bananas'
+        }
+    },
+    {
+        name: 'Neo',
+        image: neo,
+        isHatched: true,
+        cone: neoCone,
+        sneakForm: neoSneakForms,
+        metadata: {
+            origin: 'Unknown',
+            organism: 'Amorphic',
+            strength: 'Focus',
+            weakness: 'Heat',
+            power: 'Telepathy',
+            charge: 'Level 3',
+            diet: 'Watermelon'
+        }
+    },
     // {
     //     name: '?',
     //     image: coco,
