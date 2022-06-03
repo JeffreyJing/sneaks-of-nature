@@ -10,22 +10,34 @@ import sunny from '../../assets/_raw/characters/5-sunny-heater.gif';
 import barry from '../../assets/_raw/characters/6-barry-heater.gif';
 import gigi from '../../assets/_raw/characters/7-gigi-meditate.gif';
 import petey from '../../assets/_raw/characters/8-petey-used.gif';
+import belly from '../../assets/_raw/characters/belly_black_matter.gif';
+import bones from '../../assets/_raw/characters/bones_heater.gif';
+import broc from '../../assets/_raw/characters/broc_used.gif';
+import coco from '../../assets/_raw/characters/coco_heater.gif';
+import connor from '../../assets/_raw/characters/connor_used.gif';
+import dion from '../../assets/_raw/characters/dion_yeti_heater.gif';
+import dover from '../../assets/_raw/characters/dover_heater.gif';
+import dusty from '../../assets/_raw/characters/dusty_toddler.gif';
+import lancer from '../../assets/_raw/characters/lancer_beater.gif';
+import marshall from '../../assets/_raw/characters/marshall_heater.gif';
+import neo from '../../assets/_raw/characters/neo_used.gif';
+import nova from '../../assets/_raw/characters/own_nova_beater.gif';
 
-import coco from '../../assets/_raw/boxes/1-coco-box-angry-eye.gif';
-import bones from '../../assets/_raw/boxes/2-bones-box-normal_0426.gif';
-import cocoNormal from '../../assets/_raw/boxes/3-coco-box-normal-eye.gif';
-import broc from '../../assets/_raw/boxes/4-broc-box-focused-eye.gif';
-import dusty from '../../assets/_raw/boxes/5-dusty-box-focus-eye.gif';
-import nova from '../../assets/_raw/boxes/6-nova-box-focused-pupil.gif';
-import dion from '../../assets/_raw/boxes/7-dion-box-focused-pupil.gif';
-import neo from '../../assets/_raw/boxes/8-neo-box-focused-eye.gif';
-import dover from '../../assets/_raw/boxes/9-dover-box-normal-pupil.gif';
-import caneBox from '../../assets/_raw/boxes/10-cane-box-normal-eye.gif';
-import rollieBox from '../../assets/_raw/boxes/11-rollie-box-focused-pupil.gif';
-import robBox from '../../assets/_raw/boxes/12-rob-box-normal-eye.gif';
-import doverAngry from '../../assets/_raw/boxes/13-dover-box-angry-eye.gif';
-import connor from '../../assets/_raw/boxes/14-connor-box-focused-eye.gif';
-import belly from '../../assets/_raw/boxes/15-belly-box-angry-eye.gif';
+// import coco from '../../assets/_raw/boxes/1-coco-box-angry-eye.gif';
+// // import bones from '../../assets/_raw/boxes/2-bones-box-normal_0426.gif';
+// import cocoNormal from '../../assets/_raw/boxes/3-coco-box-normal-eye.gif';
+// import broc from '../../assets/_raw/boxes/4-broc-box-focused-eye.gif';
+// import dusty from '../../assets/_raw/boxes/5-dusty-box-focus-eye.gif';
+// import nova from '../../assets/_raw/boxes/6-nova-box-focused-pupil.gif';
+// import dion from '../../assets/_raw/boxes/7-dion-box-focused-pupil.gif';
+// import neo from '../../assets/_raw/boxes/8-neo-box-focused-eye.gif';
+// import dover from '../../assets/_raw/boxes/9-dover-box-normal-pupil.gif';
+// import caneBox from '../../assets/_raw/boxes/10-cane-box-normal-eye.gif';
+// import rollieBox from '../../assets/_raw/boxes/11-rollie-box-focused-pupil.gif';
+// import robBox from '../../assets/_raw/boxes/12-rob-box-normal-eye.gif';
+// import doverAngry from '../../assets/_raw/boxes/13-dover-box-angry-eye.gif';
+// import connor from '../../assets/_raw/boxes/14-connor-box-focused-eye.gif';
+// import belly from '../../assets/_raw/boxes/15-belly-box-angry-eye.gif';
 
 import aceCone from '../../assets/_raw/cones/ace.png';
 import bellyCone from '../../assets/_raw/cones/belly.png';
@@ -51,6 +63,7 @@ import robCone from '../../assets/_raw/cones/rob.png';
 import rollieCone from '../../assets/_raw/cones/rollie.png';
 import sunnyCone from '../../assets/_raw/cones/sunny.png';
 
+import aceSneakForms from '../../assets/_raw/sneakforms/ace.png';
 import bobSneakForms from '../../assets/_raw/sneakforms/bob.png';
 import caneSneakForms from '../../assets/_raw/sneakforms/cane.png';
 import chuckSneakForms from '../../assets/_raw/sneakforms/chuck.png';
@@ -193,65 +206,81 @@ const SUBJECTS = [
         },
     },
     {
-        name: '?',
-        image: coco,
-    },
-    {
-        name: '?',
-        image: bones
-    },
-    {
-        name: '?',
-        image: cocoNormal
-    },
-    {
-        name: '?',
-        image: broc
-    },
-    {
-        name: '?',
-        image: dusty
-    },
-    {
-        name: '?',
-        image: nova
-    },
-    {
-        name: '?',
-        image: dion
-    },
-    {
-        name: '?',
-        image: neo
-    },
-    {
-        name: '?',
-        image: dover
-    },
-    {
-        name: '?',
-        image: caneBox
-    },
-    {
-        name: '?',
-        image: rollieBox
-    },
-    {
-        name: '?',
-        image: robBox
-    },
-    {
-        name: '?',
-        image: doverAngry
-    },
-    {
-        name: '?',
-        image: connor
-    },
-    {
-        name: '?',
-        image: belly
-    },
+        name: 'Ace',
+        image: lancer,
+        isHatched: true,
+        cone: aceCone,
+        sneakForm: aceSneakForms,
+        metadata: {
+            origin: 'Unknown',
+            organism: 'Amorphic',
+            strength: 'Curiosity',
+            weakness: 'Heat',
+            power: 'Telepathy',
+            charge: 'Level 3',
+            diet: 'Strawberry'
+        }
+    }
+    // {
+    //     name: '?',
+    //     image: coco,
+    // },
+    // {
+    //     name: '?',
+    //     image: bones
+    // },
+    // {
+    //     name: '?',
+    //     image: cocoNormal
+    // },
+    // {
+    //     name: '?',
+    //     image: broc
+    // },
+    // {
+    //     name: '?',
+    //     image: dusty
+    // },
+    // {
+    //     name: '?',
+    //     image: nova
+    // },
+    // {
+    //     name: '?',
+    //     image: dion
+    // },
+    // {
+    //     name: '?',
+    //     image: neo
+    // },
+    // {
+    //     name: '?',
+    //     image: dover
+    // },
+    // {
+    //     name: '?',
+    //     image: caneBox
+    // },
+    // {
+    //     name: '?',
+    //     image: rollieBox
+    // },
+    // {
+    //     name: '?',
+    //     image: robBox
+    // },
+    // {
+    //     name: '?',
+    //     image: doverAngry
+    // },
+    // {
+    //     name: '?',
+    //     image: connor
+    // },
+    // {
+    //     name: '?',
+    //     image: belly
+    // },
 ];
 
 const Main = () => {
