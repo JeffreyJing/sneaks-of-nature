@@ -399,64 +399,52 @@ const SUBJECTS = [
         }
     },
     // {
-    //     name: '?',
-    //     image: coco,
+    //     name: 'Cosmo',
+    //     image: cosmo,
+    //     isHatched: true,
+    //     cone: cosmoCone,
+    //     sneakForm: cosmoSneakForms,
+    //     metadata: {
+    //         origin: 'Unknown',
+    //         organism: 'Amorphic',
+    //         strength: 'Transparency',
+    //         weakness: 'Heat',
+    //         power: 'Telepathy',
+    //         charge: 'Level 5',
+    //         diet: 'Grape'
+    //     }
     // },
     // {
-    //     name: '?',
-    //     image: bones
+    //     name: 'Kuno',
+    //     image: kuno,
+    //     isHatched: true,
+    //     cone: kunoCone,
+    //     sneakForm: kunoSneakForms,
+    //     metadata: {
+    //         origin: 'Unknown',
+    //         organism: 'Amorphic',
+    //         strength: 'Authenticity',
+    //         weakness: 'Heat',
+    //         power: 'Telepathy',
+    //         charge: 'Level 3',
+    //         diet: 'Syrup'
+    //     }
     // },
     // {
-    //     name: '?',
-    //     image: cocoNormal
-    // },
-    // {
-    //     name: '?',
-    //     image: broc
-    // },
-    // {
-    //     name: '?',
-    //     image: dusty
-    // },
-    // {
-    //     name: '?',
-    //     image: nova
-    // },
-    // {
-    //     name: '?',
-    //     image: dion
-    // },
-    // {
-    //     name: '?',
-    //     image: neo
-    // },
-    // {
-    //     name: '?',
-    //     image: dover
-    // },
-    // {
-    //     name: '?',
-    //     image: caneBox
-    // },
-    // {
-    //     name: '?',
-    //     image: rollieBox
-    // },
-    // {
-    //     name: '?',
-    //     image: robBox
-    // },
-    // {
-    //     name: '?',
-    //     image: doverAngry
-    // },
-    // {
-    //     name: '?',
-    //     image: connor
-    // },
-    // {
-    //     name: '?',
-    //     image: belly
+    //     name: 'Karl',
+    //     image: karl,
+    //     isHatched: true,
+    //     cone: karlCone,
+    //     sneakForm: karlSneakForms,
+    //     metadata: {
+    //         origin: 'Unknown',
+    //         organism: 'Amorphic',
+    //         strength: 'Cautious',
+    //         weakness: 'Heat',
+    //         power: 'Telepathy',
+    //         charge: 'Level 2',
+    //         diet: 'Kiwi'
+    //     }
     // },
 ];
 
@@ -487,7 +475,7 @@ const Main = () => {
                                     <div className='card-contents-header'>
                                         <div className='card-nickname-container'>
                                             <div className='card-nickname-label'>Nickname</div>
-                                            <div className='card-nickname-name'>{selectedCardMeta.name}</div>
+                                            <div className='card-nickname-name'>{selectedCardMeta.name.toUpperCase()}</div>
                                         </div>
                                         <div className='clearance card-clearance'>
                                             <div>
