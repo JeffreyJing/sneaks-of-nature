@@ -138,6 +138,8 @@ h2 {
 
 .card-nickname-name {
     font-size: 40px;
+    font-family: 'NinetiesHeadliner', sans-serif;
+    letter-spacing: 3px;
 }
 
 .card-contents-header {

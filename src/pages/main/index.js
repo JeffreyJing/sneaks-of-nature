@@ -571,15 +571,20 @@ const Main = () => {
 
                 <div className='project-updates'>
                     <div className='project-updates-header'>
-                        <div><h2>PROJECT UPDATES</h2></div>
-                        <div>May 4th, 2022</div>
+                        <div><h2>WHAT WE KNOW</h2></div>
+                        <div>Project Notes</div>
                     </div>
                     <div className='project-updates-container container-wrapper'>
-                        <p>NOTES:</p>
+                        <p>&quot;Sneaks Of Nature&quot; is a sneaker-inspired franchise created by renowned pop culture artist <a href='https://instagram.com/cole?igshid=YmMyMTA2M2Y=' target='_blank' rel='noopener noreferrer'>Jeff Cole</a>.</p>
+                        <p>&nbsp;</p>
+                        <p>Cole is a digital artist and Co-Founder of <a href='https://ikonick.com/' target='_blank' rel='noopener noreferrer'>Ikonick</a>. His art focuses primarily on pop culture and nostalgia while featuring masterful mashups of cultural icons. He made a major shift into sneaker culture back in 2014 when he found an opening in creating unique sneaker art. He's since attracted the attention of the biggest brands in the world. This Summer, he's evolving his recognizable style by creating a world of characters and experiences inspired by the most iconic sneakers.</p>
+                        <p>&nbsp;</p>
+                        <p>The Total Supply of Sneaks released will be: 3,333<br /><a href='https://www.metarelics.xyz/' target='_blank' rel='noopener noreferrer'>Relics Pass</a> holders get: 1 FREE MINT + The opportunity to mint one Sneak at a discounted price of: 0.3 ETH<br />Public Mint: TBD</p>
+                        {/* <p>NOTES:</p>
                         <p>&nbsp;</p>
                         <p>* Initial talks of licensing the subjects as characters called "Sneaks"</p>
                         <p>* Sneaks Holders will share upside in the Intellectual Property</p>
-                        <p>* Relic Pass Holders will receive 1 for free Sneak</p>
+                        <p>* Relic Pass Holders will receive 1 for free Sneak</p> */}
 
                         {isExpandedSeeMore && (
                             <>
