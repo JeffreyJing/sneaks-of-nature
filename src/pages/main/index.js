@@ -579,7 +579,7 @@ const Main = () => {
                         <p>&nbsp;</p>
                         <p>Cole is a digital artist and Co-Founder of <a href='https://ikonick.com/' target='_blank' rel='noopener noreferrer'>Ikonick</a>. His art focuses primarily on pop culture and nostalgia while featuring masterful mashups of cultural icons. He made a major shift into sneaker culture back in 2014 when he found an opening in creating unique sneaker art. He's since attracted the attention of the biggest brands in the world. This Summer, he's evolving his recognizable style by creating a world of characters and experiences inspired by the most iconic sneakers.</p>
                         <p>&nbsp;</p>
-                        <p>The Total Supply of Sneaks released will be: 3,333<br /><a href='https://www.metarelics.xyz/' target='_blank' rel='noopener noreferrer'>Relics Pass</a> holders get: 1 FREE MINT + The opportunity to mint one Sneak at a discounted price of: 0.3 ETH<br />Public Mint: TBD</p>
+                        <p>The Total Supply of Sneaks released will be: 3,333<br /><a href='https://www.metarelics.xyz/' target='_blank' rel='noopener noreferrer'>Relics Pass</a> holders get: 1 FREE MINT + The opportunity to mint one Sneak at a discounted price of: 0.33 ETH<br />Public Mint: TBD</p>
                         {/* <p>NOTES:</p>
                         <p>&nbsp;</p>
                         <p>* Initial talks of licensing the subjects as characters called "Sneaks"</p>
@@ -595,12 +595,12 @@ const Main = () => {
                 </div>
 
                 <div className='see-more'>
-                    <button onClick={() => setIsExpandedSeeMore(!isExpandedSeeMore)}>SEE MORE</button>
+                    {/* <button onClick={() => setIsExpandedSeeMore(!isExpandedSeeMore)}>SEE MORE</button> */}
                 </div>
 
                 <div className='subjects'>
                     <div className='subject-header'>
-                        Subject Nicknames:
+                        Subject Nicknames: click to learn more
                     </div>
                     <div className='subject-container container-wrapper'>
                         <div className='subject-items'>
