@@ -59,6 +59,11 @@ h2 {
     margin-bottom: 15px;
 }
 
+.project-updates-header h2 {
+    letter-spacing: 3px;
+
+}
+
 .container-wrapper {
     border: 2px solid black;
     border-radius: 10px;
