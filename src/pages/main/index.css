@@ -310,6 +310,12 @@ h2 {
     width: 50px;
 }
 
+.sneaks-more-info-download-pdf {
+    margin-top: 10px;
+    display: flex;
+    justify-content: end;
+}
+
 @media screen and (max-width: 1000px) {
 
     .card-modal {

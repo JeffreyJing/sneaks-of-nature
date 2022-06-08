@@ -74,6 +74,9 @@ import kunoSneakForms from '../../assets/_raw/sneakforms/kuno.png';
 import neoSneakForms from '../../assets/_raw/sneakforms/neo.png';
 import karlSneakForms from '../../assets/_raw/sneakforms/karl.png';
 
+import macro from '../../assets/_raw/pdf/macro.pdf';
+import macroMobile from '../../assets/_raw/pdf/macro-mobile.pdf';
+
 
 import { DISCORD_URL, INSTAGRAM_URL, OPENSEA_URL, TWITTER_URL } from '../../constants';
 
@@ -585,6 +588,10 @@ const Main = () => {
                         <p>* Initial talks of licensing the subjects as characters called "Sneaks"</p>
                         <p>* Sneaks Holders will share upside in the Intellectual Property</p>
                         <p>* Relic Pass Holders will receive 1 for free Sneak</p> */}
+
+                        <div className='sneaks-more-info-download-pdf'>
+                            <a href={isMobile ? macroMobile : macro} target="_blank" rel='noopener noreferrer'><button>MORE INFO</button></a>
+                        </div>
 
                         {isExpandedSeeMore && (
                             <>
