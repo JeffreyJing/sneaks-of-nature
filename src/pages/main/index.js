@@ -187,7 +187,7 @@ const SUBJECTS = [
             weakness: 'Heat',
             power: 'Telepathy',
             charge: 'Level 6',
-            diet: 'Green Apples'
+            diet: 'Lime'
         },
     },
     {
