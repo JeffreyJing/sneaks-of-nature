@@ -633,7 +633,7 @@ const Main = () => {
                     {isMobile && <>
                         <div className='details-1'>
                             <div>ORIGIN: Unknown</div>
-                            <div>ORGANISM: Anmorphic</div>
+                            <div>ORGANISM: Amorphic</div>
                         </div>
                         <div className='details-2'>
                             <div>WEAKNESS: Heat</div>
@@ -642,7 +642,7 @@ const Main = () => {
                     </>}
                     {!isMobile && <>
                         <div>ORIGIN: Unknown</div>
-                        <div>ORGANISM: Anmorphic</div>
+                        <div>ORGANISM: Amorphic</div>
                         <div>WEAKNESS: Heat</div>
                         <div>POWER: Telepathy</div>
                     </>}
