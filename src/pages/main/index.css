@@ -398,4 +398,12 @@ h2 {
         height: 30px;
         width: 30px;
     }
+
+    .card-nickname-name {
+        letter-spacing: 1px;
+    }
+
+    .project-updates-header h2 {
+        letter-spacing: 1px;
+    }
 }

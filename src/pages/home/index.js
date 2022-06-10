@@ -31,7 +31,7 @@ const Home = () => {
 				</div>
 				<div className='confidential'>
 					<p>* CONFIDENTIAL MATERIAL *</p>
-					<p>PROPERTY OF █████</p>
+					<p>PROPERTY OF <span className='black-bars'>█████</span></p>
 				</div>
 			</div>
 		</>

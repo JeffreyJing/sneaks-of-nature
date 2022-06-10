@@ -538,7 +538,7 @@ const Main = () => {
 
                                     <div className='card-ability'>
                                         <div>NOTES:</div>
-                                        {selectedCardMeta.name} has the ability to ██████████████  
+                                        {selectedCardMeta.name} has the ability to <span className='black-bars'>██████████████</span>
                                     </div>
                                 </div>
                             </div>
@@ -559,7 +559,7 @@ const Main = () => {
                             The following information is ground recon by
                         </p>
                         <p>
-                            ██████████████████████████{!isMobile && '████████████████'}
+                            <span className='black-bars'>██████████████████████████{!isMobile && '████████████████'}</span>
                         </p>
                     </div>
                     <div className='clearance'>
@@ -607,7 +607,7 @@ const Main = () => {
 
                 <div className='subjects'>
                     <div className='subject-header'>
-                        Subject Nicknames: click to learn more
+                        Click a Sneak to learn more
                     </div>
                     <div className='subject-container container-wrapper'>
                         <div className='subject-items'>
@@ -633,7 +633,7 @@ const Main = () => {
                     {isMobile && <>
                         <div className='details-1'>
                             <div>ORIGIN: Unknown</div>
-                            <div>ORGANISM: Anamorphic</div>
+                            <div>ORGANISM: Anmorphic</div>
                         </div>
                         <div className='details-2'>
                             <div>WEAKNESS: Heat</div>
@@ -642,7 +642,7 @@ const Main = () => {
                     </>}
                     {!isMobile && <>
                         <div>ORIGIN: Unknown</div>
-                        <div>ORGANISM: Anamorphic</div>
+                        <div>ORGANISM: Anmorphic</div>
                         <div>WEAKNESS: Heat</div>
                         <div>POWER: Telepathy</div>
                     </>}
@@ -661,12 +661,12 @@ const Main = () => {
                         <div><Caution /></div>
                         <div>
                             <p>* CONFIDENTIAL MATERIAL *</p>
-                            <p>PROPERTY OF █████</p>
+                            <p>PROPERTY OF <span className='black-bars'>█████</span></p>
                         </div>
                     </div>
                     <div className='mission-with-icons'>
                         <div className='mission'>
-                            Mission: Capture subjects and relocate to testing containments located at ███████████████████████████{!isMobile && '█████████████'}
+                            Mission: Capture subjects and relocate to testing containments located at <span className='black-bars'>███████████████████████████{!isMobile && '█████████████'}</span>
                         </div>
                         <div className='icon-box container-wrapper'>
                             <div>
