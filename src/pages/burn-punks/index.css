@@ -4,6 +4,93 @@
     margin: auto;
 }
 
+.bp-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.bp-logo {
+    height: 75px;
+}
+
+.bp-btn-connected {
+    cursor: not-allowed;
+}
+
+.bp-point-counter {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.bp-section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+.bp-section-header h2 {
+    font-size: 32px;
+    letter-spacing: 3px;
+}
+
+.bp-punk-container {
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(193,182,176);
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 80px;
+}
+
+.bp-punk-available {
+    width: 33%;
+    min-width: 33%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.bp-punk-available-item {
+    padding: 50px;
+    font-size: 40px;
+    cursor: pointer;
+    width: fit-content;
+    height: fit-content;
+}
+
+.selected {
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
 @media screen and (max-width: 1000px) {
+
+    .burn-punks {
+        font-size: 12px;
+    }
+
+    .bp-section-header h2 {
+        font-size: 25px;
+        letter-spacing: 1px;
+    }
+
+    .bp-logo {
+        height: 45px;
+    }
+
+    .bp-connect button {
+        font-size: 12px;
+    }
     
 }
