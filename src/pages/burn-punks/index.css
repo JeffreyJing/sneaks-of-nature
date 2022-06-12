@@ -19,6 +19,7 @@
 
 .bp-btn-connected {
     cursor: not-allowed;
+    opacity: 0.5;
 }
 
 .bp-point-counter {
@@ -67,11 +68,37 @@
     cursor: pointer;
     width: fit-content;
     height: fit-content;
+    -webkit-user-select: none;  
+    -moz-user-select: none;    
+    -ms-user-select: none;      
+    user-select: none;
+}
+
+.bp-instructions {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.bp-instructions li {
+    margin-bottom: 5px;
 }
 
 .selected {
     border: 2px solid black;
     border-radius: 10px;
+}
+
+.bp-burn-button {
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.bp-burn-disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
 }
 
 @media screen and (max-width: 1000px) {

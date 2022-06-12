@@ -69,12 +69,44 @@ const BurnPunks = () => {
                         <div
                             key={`punk-${id}`}
                             className={`bp-punk-available-item ${selectedPunkType === 'punk' && selectedPunkId === id ? 'selected' : ''}`}
-                            onClick={() => selectedPunkId === id ? setSelectedPunkToBurn(undefined) : setSelectedPunkToBurn({ punkType: 'punk', id })}
+                            onClick={() => selectedPunkType === 'punk' && selectedPunkId === id ? setSelectedPunkToBurn(undefined) : setSelectedPunkToBurn({ punkType: 'punk', id })}
                         >
                             &#x23;{id}
                         </div>
                     </div>))
                 )}
+            </div>
+
+            <div className='bp-section-header'>
+                <div><h2>THE ONE DIMENSIONAL PUNK:</h2></div>
+                <div>Value = 0.5 Punk</div>
+            </div>
+            <div className='bp-punk-container'>
+                {punkIdsAvailable.length > 0 && (
+                    punkIdsAvailable.map((id) => (<div className='bp-punk-available'>
+                        <div
+                            key={`punk-${id}`}
+                            className={`bp-punk-available-item ${selectedPunkType === '1d-punk' && selectedPunkId === id ? 'selected' : ''}`}
+                            onClick={() => selectedPunkType === '1d-punk' && selectedPunkId === id ? setSelectedPunkToBurn(undefined) : setSelectedPunkToBurn({ punkType: '1d-punk', id })}
+                        >
+                            {/** TODO: Replace with images */}
+                            &#x23;{id}
+                        </div>
+                    </div>))
+                )}
+            </div>
+
+            <div className='bp-instructions'>
+                <ol>
+                    <li>Select the value of three Relic Punks</li>
+                    <li>The One Dimensional Punk &#x28;airdropped to holders of the Surprise Punk&#x29; is worth the value of .5 Punks. All other Punks hold the value of one. </li>
+                    <li>Press Burn Punks to execute the transaction.</li>
+                    <li>Your wallet address will then be added to the Sneaks List. You will have the opportunity to mint a Sneaks of Nature NFT for 0.33 ETH.</li>
+                </ol>
+            </div>
+
+            <div className='bp-burn-button'>
+                <button className={`${selectedPunkType === undefined ? 'bp-burn-disabled' : ''}`}>BURN PUNKS</button>
             </div>
         </div>
     );
