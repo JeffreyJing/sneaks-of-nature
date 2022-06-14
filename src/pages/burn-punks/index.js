@@ -1,10 +1,13 @@
 import { useEffect, useState, useContext } from 'react';
 import { SneaksSmaller } from '../../assets/icons/logos';
 import { Web3Context } from '../../context/web3-context';
+import punksAirdropAbi from '../../assets/abis/punks-airdrop-abi.json';
+import relicPunksAbi from '../../assets/abis/relic-punks-abi.json';
 import './index.css';
+import { BURN_RELIC_PUNKS_AIRDROP_ADDRESS, RELIC_PUNKS_ADDRESS } from '../../constants';
 
 const BurnPunks = () => {
-    const { connect, connected, address } = useContext(Web3Context);
+    const { connect, connected, address, web3 } = useContext(Web3Context);
 	const [width, setWidth] = useState(window.innerWidth);
     const [userPointCount, setUserPointCount] = useState(0);
     const [punkIdsAvailable, setPunkIdsAvailable] = useState([]);
@@ -24,12 +27,42 @@ const BurnPunks = () => {
     useEffect(() => {
         const interval = setInterval(async () => {
 
-            // TODO: REMOVE MOCK DATA
-            setPunkIdsAvailable([123,456,234,444]);
-            setOneDimensionalPunksAvailable([123]);
-            /////////////////////////
+            if (!connected) {
+                return;
+            }
 
+            try {
+                const relicPunksContract = new web3.eth.Contract(
+                    relicPunksAbi,
+                    RELIC_PUNKS_ADDRESS,
+                    {
+                        from: address
+                    }
+                );
 
+                const punksAirdropContract = new web3.eth.Contract(
+                    punksAirdropAbi,
+                    BURN_RELIC_PUNKS_AIRDROP_ADDRESS,
+                    {
+                        from: address
+                    }
+                )
+
+                const _punkIdsAvailable = await relicPunksContract.methods.walletOfOwner(address).call();
+                const _oneDimensionalPunksCount = await punksAirdropContract.methods.balanceOf(address).call();
+                const _oneDimensionalPunksPromises = [];
+                for (let i = 0; i < _oneDimensionalPunksCount; i++) {
+                    _oneDimensionalPunksPromises.push(
+                        punksAirdropContract.methods.tokenOfOwnerByIndex(address, i).call()
+                    );
+                }
+                const _oneDimensionalPunksOwned = (await Promise.allSettled(_oneDimensionalPunksPromises)).map(d => d.value);
+
+                setPunkIdsAvailable(_punkIdsAvailable);
+                setOneDimensionalPunksAvailable(_oneDimensionalPunksOwned);
+            } catch(e) {
+                console.log("ERROR", e);
+            }
 
         }, 1000);
 
@@ -39,6 +72,10 @@ const BurnPunks = () => {
             }
         }
     }, [connected]);
+
+    function burn() {
+
+    }
 
     const selectedPunkType = selectedPunkToBurn?.punkType;
     const selectedPunkId = selectedPunkToBurn?.id;
@@ -65,9 +102,9 @@ const BurnPunks = () => {
             </div>
             <div className='bp-punk-container'>
                 {punkIdsAvailable.length > 0 && (
-                    punkIdsAvailable.map((id) => (<div className='bp-punk-available'>
+                    punkIdsAvailable.map((id) => (<div className='bp-punk-available' key={`punk-${id}`}>
                         <div
-                            key={`punk-${id}`}
+                            
                             className={`bp-punk-available-item ${selectedPunkType === 'punk' && selectedPunkId === id ? 'selected' : ''}`}
                             onClick={() => selectedPunkType === 'punk' && selectedPunkId === id ? setSelectedPunkToBurn(undefined) : setSelectedPunkToBurn({ punkType: 'punk', id })}
                         >
@@ -82,10 +119,10 @@ const BurnPunks = () => {
                 <div>Value = 0.5 Punk</div>
             </div>
             <div className='bp-punk-container'>
-                {punkIdsAvailable.length > 0 && (
-                    punkIdsAvailable.map((id) => (<div className='bp-punk-available'>
+                {oneDimensionalPunksAvailable.length > 0 && (
+                    oneDimensionalPunksAvailable.map((id) => (<div className='bp-punk-available' key={`airdrop-punk-${id}`}>
                         <div
-                            key={`punk-${id}`}
+                            
                             className={`bp-punk-available-item ${selectedPunkType === '1d-punk' && selectedPunkId === id ? 'selected' : ''}`}
                             onClick={() => selectedPunkType === '1d-punk' && selectedPunkId === id ? setSelectedPunkToBurn(undefined) : setSelectedPunkToBurn({ punkType: '1d-punk', id })}
                         >
@@ -106,7 +143,7 @@ const BurnPunks = () => {
             </div>
 
             <div className='bp-burn-button'>
-                <button className={`${selectedPunkType === undefined ? 'bp-burn-disabled' : ''}`}>BURN PUNKS</button>
+                <button className={`${selectedPunkType === undefined ? 'bp-burn-disabled' : ''}`} onClick={() => burn()}>BURN PUNKS</button>
             </div>
         </div>
     );
