@@ -574,7 +574,7 @@ const Main = () => {
 
                 <div className='project-updates'>
                     <div className='project-updates-header'>
-                        <div><h2>WHAT WE KNOW</h2></div>
+                        <div><h2 className={`${isMobile ? 'mobile-spacing' : ''}`}>WHAT WE KNOW</h2></div>
                         <div>Project Notes</div>
                     </div>
                     <div className='project-updates-container container-wrapper'>
