@@ -56,7 +56,7 @@ const BurnPunks = () => {
             } catch (e) {
                 console.log("ERROR getting punk to burn", e)
             }
-        }, 1000);
+        }, 250);
 
         return () => {
             if (interval) {

@@ -105,6 +105,9 @@
 }
 
 @media screen and (max-width: 1000px) {
+    .bp-punk-available-item {
+        padding: 5px;
+    }
 
     .burn-punks {
         font-size: 12px;
