@@ -94,6 +94,9 @@
 .bp-burn-button {
     margin-bottom: 100px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
 }
 
 .bp-burn-disabled {
@@ -109,7 +112,7 @@
 
     .bp-section-header h2 {
         font-size: 25px;
-        letter-spacing: 1px;
+        letter-spacing: -0.5px;
     }
 
     .bp-logo {
