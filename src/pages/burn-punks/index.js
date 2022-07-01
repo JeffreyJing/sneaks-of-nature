@@ -248,7 +248,7 @@ const BurnPunks = () => {
 
             <div className='bp-section-header'>
                 <div><h2>RELIC PUNKS AVAILABLE:</h2></div>
-                <div>Value = 1 Punk</div>
+                <div>Value = 2 Punks</div>
             </div>
             <div className='bp-punk-container'>
                 {punkIdsAvailable.length > 0 && (
@@ -266,7 +266,7 @@ const BurnPunks = () => {
 
             <div className='bp-section-header'>
                 <div><h2>THE ONE DIMENSIONAL PUNK:</h2></div>
-                <div>Value = 0.5 Punk</div>
+                <div>Value = 1 Punk</div>
             </div>
             <div className='bp-punk-container'>
                 {oneDimensionalPunksAvailable.length > 0 && (
@@ -282,8 +282,6 @@ const BurnPunks = () => {
                     </div>))
                 )}
             </div>
-
-            
 
             <div className='bp-burn-button'>
                 <button className={`${approveButtonDisabled ? 'bp-burn-disabled' : ''}`} onClick={approveButtonDisabled ? undefined : () => approve()}>APPROVE</button>
