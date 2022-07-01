@@ -82,6 +82,10 @@
     margin-bottom: 40px;
 }
 
+.bp-instructions p {
+    padding-left: 10px;
+}
+
 .bp-instructions li {
     margin-bottom: 5px;
 }
@@ -92,6 +96,7 @@
 }
 
 .bp-burn-button {
+    margin-top: 50px;
     margin-bottom: 100px;
     text-align: center;
     display: flex;

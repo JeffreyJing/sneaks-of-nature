@@ -219,9 +219,33 @@ const BurnPunks = () => {
                 </div>
             </div>
             <div className='bp-point-counter'>
-                {connected && <>You have {userPointCount} points.</>}
+                {connected && <>You have {userPointCount} points. {userPointCount >= 6 && 'You are on the Sneaks Discount List!'}</>}
                 {!connected && <>&nbsp;</>}
             </div>
+
+            <div className='bp-instructions'>
+                <ol>
+                    <li>Approve the burner contract to burn Relic Punks or One Dimensional Punks.</li>
+                    <li>Burn your punks one at a time. The One Dimensional Punk &#x28;airdropped to holders of the Surprise Punk&#x29; is worth the value of 1 Punk. All other Punks hold the value of 2.</li>
+                    <li>Once you have burned the value of 6 Punks, your wallet address will be added to the Sneaks Discount List. You will have the opportunity to mint a Sneaks of Nature NFT for .33 ETH</li>
+                </ol>
+                <p>
+                    Possible Combinations:
+                </p>
+                <p>
+                    2 Punks and 2 One Dimensionals = 6
+                    <br />
+                    1 Punk and 4 One Dimensionals = 6
+                    <br />
+                    0 Punks and 6 One Dimensionals = 6
+                    <br />
+                    3 Punks and 0 One Dimensionals = 6
+                </p>
+                <p>
+                    Note: If you burn the value of 12 Punks, 18 Punks, etc. You will be eligibile for additional discounted mint spots.
+                </p>
+            </div>
+
             <div className='bp-section-header'>
                 <div><h2>RELIC PUNKS AVAILABLE:</h2></div>
                 <div>Value = 1 Punk</div>
@@ -259,14 +283,7 @@ const BurnPunks = () => {
                 )}
             </div>
 
-            <div className='bp-instructions'>
-                <ol>
-                    <li>Select a Punk to burn.</li>
-                    <li>The One Dimensional Punk &#x28;airdropped to holders of the Surprise Punk&#x29; is worth the value of .5 Punks. All other Punks hold the value of one. </li>
-                    <li>Approve the burner contract to burn Relic Punks or One Dimensional Punks, then press Burn Punks to execute the transaction.</li>
-                    <li>Once you have burned the value of three Relic Punks, your wallet address will be added to the Sneaks List. You will have the opportunity to mint a Sneaks of Nature NFT for 0.33 ETH.</li>
-                </ol>
-            </div>
+            
 
             <div className='bp-burn-button'>
                 <button className={`${approveButtonDisabled ? 'bp-burn-disabled' : ''}`} onClick={approveButtonDisabled ? undefined : () => approve()}>APPROVE</button>
