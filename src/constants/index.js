@@ -4,7 +4,7 @@ export { TOKEN_HOLDERS };
 
 export const TESTING_MODE = true;
 
-export const DISCORD_URL = "https://discord.gg/erFaF6Ytx9";
+export const DISCORD_URL = "https://discord.com/invite/GFbFZB78Cd";
 export const TWITTER_URL = "https://twitter.com/sneaksofnature";
 export const OPENSEA_URL = "https://opensea.io/collection/relics-pass"; // TODO
 export const LOOKSRARE_URL = ""; // TODO
@@ -14,9 +14,9 @@ export const RELICS_URL = ""; // https://metarelics.xyz
 export const IKONICK_TWITTER_URL = "https://twitter.com/TeamIKONICK";
 export const IKONICK_INSTAGRAM_URL = "https://www.instagram.com/ikonick/";
 
-const MAINNET_BURN_ADDRESS = '';
-const MAINNET_RELIC_PUNKS_ADDRESS = '';
-const MAINNET_RELIC_PUNKS_AIRDROP_ADDRESS = '';
+const MAINNET_BURN_ADDRESS = '0x2B8e1e526a531D7E9b8878469D08104667B2dc16';
+const MAINNET_RELIC_PUNKS_ADDRESS = '0xcB264E46F558876Fb73F23349073C7D51076D605';
+const MAINNET_RELIC_PUNKS_AIRDROP_ADDRESS = '0x8c198b492cAda2Fd9697E8E9ac61f706f1E817EC';
 
 const TESTNET_BURN_ADDRESS = '0x399F5906F7faeefe1E00A51176d0CEb85d176101';
 const TESTNET_RELIC_PUNKS_ADDRESS = '0x6E61aB833Ce83E3Cb5C4A9800fe7DcDaf81e5072';
