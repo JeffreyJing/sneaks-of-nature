@@ -1,0 +1,134 @@
+.burn-punks {
+    font-size: 16px;
+    width: 90%;
+    margin: auto;
+}
+
+.bp-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.bp-logo {
+    height: 75px;
+}
+
+.bp-btn-connected {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.bp-point-counter {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.bp-section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+.bp-section-header h2 {
+    font-size: 32px;
+    letter-spacing: 3px;
+}
+
+.bp-punk-container {
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(193,182,176);
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 80px;
+}
+
+.bp-punk-available {
+    width: 33%;
+    min-width: 33%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.bp-punk-available-item {
+    padding: 50px;
+    font-size: 40px;
+    cursor: pointer;
+    width: fit-content;
+    height: fit-content;
+    -webkit-user-select: none;  
+    -moz-user-select: none;    
+    -ms-user-select: none;      
+    user-select: none;
+}
+
+.bp-instructions {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.bp-instructions p {
+    padding-left: 10px;
+}
+
+.bp-instructions li {
+    margin-bottom: 5px;
+}
+
+.selected {
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.bp-burn-button {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+}
+
+.bp-burn-disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 1000px) {
+    .bp-punk-available-item {
+        padding: 5px;
+    }
+
+    .burn-punks {
+        font-size: 12px;
+    }
+
+    .bp-section-header h2 {
+        font-size: 25px;
+        letter-spacing: -0.5px;
+    }
+
+    .bp-logo {
+        height: 45px;
+    }
+
+    .bp-connect button {
+        font-size: 12px;
+    }
+    
+}
