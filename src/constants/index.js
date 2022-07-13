@@ -2,7 +2,7 @@ import TOKEN_HOLDERS from '../assets/whitelist-tokens/holders.json';
 
 export { TOKEN_HOLDERS };
 
-export const TESTING_MODE = true;
+export const TESTING_MODE = false;
 
 export const DISCORD_URL = "https://discord.com/invite/GFbFZB78Cd";
 export const TWITTER_URL = "https://twitter.com/sneaksofnature";
