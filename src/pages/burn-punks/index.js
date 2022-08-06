@@ -219,7 +219,7 @@ const BurnPunks = () => {
                 </div>
             </div>
             <div className='bp-point-counter'>
-                {connected && <>You have {userPointCount} points. {userPointCount >= 6 && 'You are on the Sneaks Discount List!'}</>}
+                {connected && <>You have {userPointCount} points. {userPointCount >= 4 && 'You are on the Sneaks Discount List!'}</>}
                 {!connected && <>&nbsp;</>}
             </div>
 
@@ -227,19 +227,17 @@ const BurnPunks = () => {
                 <ol>
                     <li>Approve the burner contract to burn Relic Punks or One Dimensional Punks.</li>
                     <li>Burn your punks one at a time. The One Dimensional Punk &#x28;airdropped to holders of the Surprise Punk&#x29; is worth the value of 1 Punk. All other Punks hold the value of 2.</li>
-                    <li>Once you have burned the value of 6 Punks, your wallet address will be added to the Sneaks Discount List. You will have the opportunity to mint a Sneaks of Nature NFT for .33 ETH</li>
+                    <li>Once you have burned the value of 4 Punks, your wallet address will be added to the Sneaks Discount List. You will have the opportunity to mint a Sneaks of Nature NFT for .33 ETH</li>
                 </ol>
                 <p>
                     Possible Combinations:
                 </p>
                 <p>
-                    2 Punks and 2 One Dimensionals = 6
+                    2 Punks and 0 One Dimensionals = 4
                     <br />
-                    1 Punk and 4 One Dimensionals = 6
+                    1 Punk and 2 One Dimensionals = 4
                     <br />
-                    0 Punks and 6 One Dimensionals = 6
-                    <br />
-                    3 Punks and 0 One Dimensionals = 6
+                    0 Punks and 4 One Dimensionals = 4
                 </p>
                 <p>
                     Note: If you burn the value of 12 Punks, 18 Punks, etc. You will be eligibile for additional discounted mint spots.
