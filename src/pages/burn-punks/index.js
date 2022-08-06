@@ -227,7 +227,7 @@ const BurnPunks = () => {
                 <ol>
                     <li>Approve the burner contract to burn Relic Punks or One Dimensional Punks.</li>
                     <li>Burn your punks one at a time. The One Dimensional Punk &#x28;airdropped to holders of the Surprise Punk&#x29; is worth the value of 1 Punk. All other Punks hold the value of 2.</li>
-                    <li>Once you have burned the value of 6 Punks, your wallet address will be added to the Sneaks Discount List. You will have the opportunity to mint a Sneaks of Nature NFT for .33 ETH</li>
+                    <li>Once you have burned the value of 4 Punks, your wallet address will be added to the Sneaks Discount List. You will have the opportunity to mint a Sneaks of Nature NFT for .33 ETH</li>
                 </ol>
                 <p>
                     Possible Combinations:
