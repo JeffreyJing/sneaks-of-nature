@@ -219,7 +219,7 @@ const BurnPunks = () => {
                 </div>
             </div>
             <div className='bp-point-counter'>
-                {connected && <>You have {userPointCount} points. {userPointCount >= 6 && 'You are on the Sneaks Discount List!'}</>}
+                {connected && <>You have {userPointCount} points. {userPointCount >= 4 && 'You are on the Sneaks Discount List!'}</>}
                 {!connected && <>&nbsp;</>}
             </div>
 
@@ -233,16 +233,14 @@ const BurnPunks = () => {
                     Possible Combinations:
                 </p>
                 <p>
-                    2 Punks and 2 One Dimensionals = 6
+                    2 Punks and 0 One Dimensionals = 4
                     <br />
-                    1 Punk and 4 One Dimensionals = 6
+                    1 Punk and 2 One Dimensionals = 4
                     <br />
-                    0 Punks and 6 One Dimensionals = 6
-                    <br />
-                    3 Punks and 0 One Dimensionals = 6
+                    0 Punks and 4 One Dimensionals = 4
                 </p>
                 <p>
-                    Note: If you burn the value of 12 Punks, 18 Punks, etc. You will be eligibile for additional discounted mint spots.
+                    Note: If you burn the value of 8 Punks, 12 Punks, etc. You will be eligibile for additional discounted mint spots.
                 </p>
             </div>
 
