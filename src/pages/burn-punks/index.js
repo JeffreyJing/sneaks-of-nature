@@ -240,7 +240,7 @@ const BurnPunks = () => {
                     0 Punks and 4 One Dimensionals = 4
                 </p>
                 <p>
-                    Note: If you burn the value of 12 Punks, 18 Punks, etc. You will be eligibile for additional discounted mint spots.
+                    Note: If you burn the value of 8 Punks, 12 Punks, etc. You will be eligibile for additional discounted mint spots.
                 </p>
             </div>
 
